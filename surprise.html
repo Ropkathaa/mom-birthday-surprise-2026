@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Birthday Surprise 🎀</title>
+
+    <meta name="description"
+          content="A little birthday surprise, made especially with love.">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 24px;
+
+            font-family:
+                    Georgia,
+                    "Times New Roman",
+                    serif;
+
+            background:
+                    radial-gradient(
+                            circle at 50% 35%,
+                            rgba(201, 162, 39, 0.16),
+                            transparent 35%
+                    ),
+                    radial-gradient(
+                            circle at 20% 80%,
+                            rgba(248, 215, 227, 0.45),
+                            transparent 30%
+                    ),
+                    #fffdf8;
+
+            color: #211d1e;
+
+        }
+
+
+        .surprise-card {
+
+            width: min(430px, 100%);
+
+            padding: 48px 28px 42px;
+
+            text-align: center;
+
+            background:
+                    rgba(255,255,255,0.82);
+
+            border:
+                    1px solid
+                    rgba(201,162,39,0.30);
+
+            border-radius: 28px;
+
+            box-shadow:
+                    0 25px 70px
+                    rgba(80,50,40,0.10);
+
+        }
+
+
+        .bow {
+
+            font-size: 3.2rem;
+
+            margin-bottom: 15px;
+
+            animation:
+                    float 4s ease-in-out infinite;
+
+        }
+
+
+        .tiny-stars {
+
+            color: #c9a227;
+
+            font-size: 1.1rem;
+
+            letter-spacing: 8px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .eyebrow {
+
+            font-family:
+                    Arial,
+                    sans-serif;
+
+            font-size: 0.68rem;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            color: #651225;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        h1 {
+
+            font-size:
+                    clamp(2.5rem, 11vw, 4rem);
+
+            line-height: 0.95;
+
+            font-weight: 500;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        h1 span {
+
+            display: block;
+
+            color: #8f172f;
+
+            font-style: italic;
+
+        }
+
+
+        .message {
+
+            font-size: 1.05rem;
+
+            line-height: 1.65;
+
+            color: #292526;
+
+            font-weight: 500;
+
+            margin-bottom: 28px;
+
+        }
+
+
+        .surprise-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            width: 100%;
+
+            min-height: 54px;
+
+            padding: 14px 22px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background: #8f172f;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 0.78rem;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+            cursor: pointer;
+
+            box-shadow:
+                    0 12px 30px
+                    rgba(143,23,47,0.20);
+
+            transition:
+                    transform 0.3s ease,
+                    box-shadow 0.3s ease;
+
+        }
+
+
+        .surprise-button:hover {
+
+            transform:
+                    translateY(-4px);
+
+            box-shadow:
+                    0 18px 38px
+                    rgba(143,23,47,0.28);
+
+        }
+
+
+        .footer {
+
+            margin-top: 22px;
+
+            font-family:
+                    Arial,
+                    sans-serif;
+
+            font-size: 0.65rem;
+
+            font-weight: 600;
+
+            color: #514749;
+
+        }
+
+
+        .flag-dots {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 5px;
+
+            margin-top: 12px;
+
+        }
+
+
+        .dot {
+
+            width: 5px;
+
+            height: 5px;
+
+            border-radius: 50%;
+
+        }
+
+
+        .saffron {
+            background: #ff9933;
+        }
+
+        .white {
+            background: #cfcfcf;
+        }
+
+        .green {
+            background: #138808;
+        }
+
+
+        @keyframes float {
+
+            0%,
+            100% {
+
+                transform:
+                        translateY(0)
+                        rotate(-3deg);
+
+            }
+
+            50% {
+
+                transform:
+                        translateY(-8px)
+                        rotate(3deg);
+
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            body {
+                padding: 16px;
+            }
+
+            .surprise-card {
+
+                padding:
+                        42px 22px 35px;
+
+            }
+
+            .message {
+
+                font-size: 1.05rem;
+
+            }
+
+            .surprise-button {
+
+                min-height: 58px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<main class="surprise-card">
+
+    <div class="bow">
+        🎀
+    </div>
+
+    <div class="tiny-stars">
+        ✦ ✧ ✦
+    </div>
+
+    <p class="eyebrow">
+        A little something for you
+    </p>
+
+    <h1>
+        Birthday
+        <span>Surprise</span>
+    </h1>
+
+    <p class="message">
+
+        I made something especially for you.
+
+        <br>
+
+        Take a little moment,
+        and open it when you're ready. ❤️
+
+    </p>
+
+    <a
+            class="surprise-button"
+            href="https://wonderful-druid-b97148.netlify.app"
+    >
+
+        ✨ OPEN YOUR SURPRISE ✨
+
+    </a>
+
+    <p class="footer">
+        Made with love
+    </p>
+
+    <div class="flag-dots">
+
+        <span class="dot saffron"></span>
+        <span class="dot white"></span>
+        <span class="dot green"></span>
+
+    </div>
+
+</main>
+
+</body>
+
+</html>

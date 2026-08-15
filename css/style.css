@@ -1,0 +1,4842 @@
+/* =========================================================
+   MA'S BIRTHDAY — GLOBAL STYLE
+   15 AUGUST
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background: #fffdf8;
+    color: #332b2b;
+}
+
+
+/* =========================================================
+   LANDING PAGE
+   ========================================================= */
+
+.landing-page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+            radial-gradient(
+                    circle at 50% 40%,
+                    rgba(232, 217, 168, 0.38),
+                    transparent 34%
+            ),
+            radial-gradient(
+                    circle at 15% 85%,
+                    rgba(248, 215, 227, 0.40),
+                    transparent 30%
+            ),
+            radial-gradient(
+                    circle at 90% 20%,
+                    rgba(217, 79, 112, 0.08),
+                    transparent 25%
+            ),
+            #fffdf8;
+}
+
+
+/* =========================================================
+   GOLDEN GLOW
+   ========================================================= */
+
+.golden-glow {
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    border-radius: 50%;
+
+    background: rgba(201, 162, 39, 0.07);
+
+    filter: blur(70px);
+
+    animation: glowPulse 6s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    position: relative;
+    z-index: 5;
+
+    width: min(850px, 90%);
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+/* =========================================================
+   DATE
+   ========================================================= */
+
+.date {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.15rem;
+    letter-spacing: 8px;
+
+    color: #a61b32;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   DECORATIVE LINE
+   ========================================================= */
+
+.little-line {
+    width: 70px;
+    height: 1px;
+
+    margin: 0 auto 22px;
+
+    background: #c9a227;
+}
+
+
+/* =========================================================
+   INDEPENDENCE TEXT
+   ========================================================= */
+
+.independence-text {
+    font-size: 0.82rem;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #9b7b21;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+   ========================================================= */
+
+h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(3rem, 7vw, 6.5rem);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    color: #332b2b;
+
+    margin-bottom: 30px;
+
+    animation: titleReveal 1.5s ease forwards;
+}
+
+h1 span {
+    color: #a61b32;
+    font-style: italic;
+}
+
+@keyframes titleReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.intro {
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.35rem;
+
+    line-height: 1.6;
+
+    color: #665b5b;
+}
+
+
+/* =========================================================
+   CENTER SYMBOL
+   ========================================================= */
+
+.hero-symbol {
+    margin: 30px auto;
+
+    color: #c9a227;
+
+    font-size: 1.5rem;
+
+    animation: symbolFloat 3s ease-in-out infinite;
+}
+
+@keyframes symbolFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+
+/* =========================================================
+   ENTER BUTTON
+   ========================================================= */
+
+.enter-button {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 16px 28px;
+
+    border: 1px solid rgba(166, 27, 50, 0.35);
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #a61b32;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    backdrop-filter: blur(10px);
+
+    font-size: 0.78rem;
+
+    letter-spacing: 2px;
+
+    transition: all 0.4s ease;
+
+    box-shadow:
+            0 10px 30px rgba(166, 27, 50, 0.08);
+}
+
+.enter-button:hover {
+
+    transform: translateY(-5px);
+
+    background: #a61b32;
+
+    color: #fff;
+
+    box-shadow:
+            0 18px 35px rgba(166, 27, 50, 0.20);
+}
+
+.arrow {
+
+    font-size: 1.1rem;
+
+    transition: transform 0.3s ease;
+}
+
+.enter-button:hover .arrow {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   SIGNATURE
+   ========================================================= */
+
+.signature {
+
+    margin-top: 35px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.05rem;
+
+    color: #806f6f;
+
+    line-height: 1.4;
+}
+
+.signature span {
+
+    color: #a61b32;
+
+    font-style: italic;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================================
+   DECORATIONS
+   ========================================================= */
+
+.decoration {
+
+    position: absolute;
+
+    z-index: 3;
+
+    user-select: none;
+
+    pointer-events: none;
+}
+
+.bow {
+
+    font-size: 3rem;
+
+    filter: drop-shadow(
+            0 8px 12px rgba(166, 27, 50, 0.12)
+    );
+}
+
+.bow-one {
+
+    top: 12%;
+    left: 9%;
+
+    transform: rotate(-15deg);
+
+    animation: floatingOne 5s ease-in-out infinite;
+}
+
+.bow-two {
+
+    bottom: 14%;
+    right: 9%;
+
+    transform: rotate(15deg);
+
+    animation: floatingTwo 6s ease-in-out infinite;
+}
+
+.cookie {
+
+    font-size: 2.2rem;
+
+    filter: drop-shadow(
+            0 7px 10px rgba(100, 50, 30, 0.10)
+    );
+}
+
+.cookie-one {
+
+    top: 24%;
+    right: 12%;
+
+    animation: floatingTwo 5.5s ease-in-out infinite;
+}
+
+.cookie-two {
+
+    bottom: 23%;
+    left: 13%;
+
+    animation: floatingOne 6.5s ease-in-out infinite;
+}
+
+.cookie-three {
+
+    top: 10%;
+    left: 45%;
+
+    opacity: 0.5;
+
+    transform: scale(0.65);
+
+    animation: floatingOne 7s ease-in-out infinite;
+}
+
+@keyframes floatingOne {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-8deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(4deg);
+    }
+}
+
+@keyframes floatingTwo {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(8deg);
+    }
+
+    50% {
+        transform: translateY(16px) rotate(-5deg);
+    }
+}
+
+
+/* =========================================================
+   STARS
+   ========================================================= */
+
+.stars span {
+
+    position: absolute;
+
+    color: #c9a227;
+
+    opacity: 0.45;
+
+    font-size: 1rem;
+
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+.stars span:nth-child(1) {
+    top: 18%;
+    left: 27%;
+}
+
+.stars span:nth-child(2) {
+    top: 34%;
+    left: 8%;
+}
+
+.stars span:nth-child(3) {
+    top: 16%;
+    right: 28%;
+}
+
+.stars span:nth-child(4) {
+    top: 58%;
+    right: 8%;
+}
+
+.stars span:nth-child(5) {
+    bottom: 18%;
+    right: 28%;
+}
+
+.stars span:nth-child(6) {
+    bottom: 12%;
+    left: 29%;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.25;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 0.9;
+        transform: scale(1.25);
+    }
+}
+
+
+/* =========================================================
+   INDIA / INDEPENDENCE FOOTER
+   ========================================================= */
+
+.bottom-message {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 1.3px;
+
+    text-transform: uppercase;
+
+    color: #8a7d7d;
+}
+
+.flag-dot {
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+}
+
+.saffron {
+    background: #ff9933;
+}
+
+.white {
+    background: #dddddd;
+}
+
+.green {
+    background: #138808;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding: 50px 18px;
+    }
+
+    h1 {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+    }
+
+    .intro {
+        font-size: 1.15rem;
+    }
+
+    .bow {
+        font-size: 2.2rem;
+    }
+
+    .cookie {
+        font-size: 1.6rem;
+    }
+
+    .bottom-message {
+        font-size: 0.52rem;
+        letter-spacing: 0.8px;
+    }
+}
+/* =========================================================
+   STORY PAGES
+   ========================================================= */
+
+.story-page {
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+            radial-gradient(
+                    circle at 50% 45%,
+                    rgba(232, 217, 168, 0.28),
+                    transparent 35%
+            ),
+            radial-gradient(
+                    circle at 10% 90%,
+                    rgba(248, 215, 227, 0.45),
+                    transparent 30%
+            ),
+            #fffdf8;
+}
+
+.story-glow {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(201, 162, 39, 0.06);
+
+    filter: blur(80px);
+
+    animation: glowPulse 7s ease-in-out infinite;
+}
+
+.story-content {
+    position: relative;
+
+    z-index: 5;
+
+    width: min(760px, 90%);
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.chapter-number {
+    font-size: 0.72rem;
+
+    letter-spacing: 4px;
+
+    color: #a61b32;
+
+    margin-bottom: 15px;
+}
+
+.story-line {
+    width: 55px;
+    height: 1px;
+
+    background: #c9a227;
+
+    margin: 0 auto 25px;
+}
+
+.story-content h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(3rem, 7vw, 5.5rem);
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.story-content h1 span {
+    color: #a61b32;
+
+    font-style: italic;
+}
+
+.story-lead {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.45rem;
+
+    color: #806f6f;
+
+    margin-bottom: 30px;
+}
+
+.quote-card {
+
+    position: relative;
+
+    max-width: 650px;
+
+    margin: 0 auto 28px;
+
+    padding: 30px 45px;
+
+    border: 1px solid rgba(201, 162, 39, 0.25);
+
+    background: rgba(255, 255, 255, 0.55);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+            0 15px 45px rgba(100, 60, 50, 0.06);
+}
+
+.quote-mark {
+
+    position: absolute;
+
+    top: 5px;
+    left: 15px;
+
+    font-family: Georgia, serif;
+
+    font-size: 4rem;
+
+    color: rgba(166, 27, 50, 0.20);
+}
+
+.quote-mark.closing {
+
+    top: auto;
+    left: auto;
+
+    right: 15px;
+    bottom: -20px;
+}
+
+.quote-card p {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.45rem;
+
+    line-height: 1.55;
+
+    color: #4f4444;
+
+    font-style: italic;
+}
+
+.story-text {
+
+    max-width: 620px;
+
+    margin: 18px auto;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.18rem;
+
+    line-height: 1.65;
+
+    color: #665b5b;
+}
+
+.story-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+    padding: 14px 25px;
+
+    border-radius: 40px;
+
+    border: 1px solid rgba(166, 27, 50, 0.30);
+
+    color: #a61b32;
+
+    text-decoration: none;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 2px;
+
+    background: rgba(255,255,255,0.65);
+
+    transition: all 0.35s ease;
+}
+
+.story-button:hover {
+
+    background: #a61b32;
+
+    color: white;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+            0 15px 30px rgba(166, 27, 50, 0.18);
+}
+
+.story-button span {
+
+    font-size: 1.1rem;
+
+    transition: transform 0.3s ease;
+}
+
+.story-button:hover span {
+    transform: translateX(5px);
+}
+
+.story-decoration {
+
+    position: absolute;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.bow-story {
+
+    top: 12%;
+    left: 10%;
+
+    font-size: 3rem;
+
+    transform: rotate(-12deg);
+
+    animation: floatingOne 5s ease-in-out infinite;
+}
+
+.cookie-story {
+
+    right: 12%;
+    bottom: 18%;
+
+    font-size: 2rem;
+
+    animation: floatingTwo 6s ease-in-out infinite;
+}
+
+.page-indicator {
+
+    position: absolute;
+
+    right: 30px;
+    bottom: 25px;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 2px;
+
+    color: #a18f8f;
+}
+
+@media (max-width: 700px) {
+
+    .story-content {
+        padding: 45px 15px;
+    }
+
+    .quote-card {
+        padding: 25px 28px;
+    }
+
+    .quote-card p {
+        font-size: 1.2rem;
+    }
+
+    .story-text {
+        font-size: 1.08rem;
+    }
+
+    .bow-story {
+        left: 5%;
+        font-size: 2rem;
+    }
+
+    .cookie-story {
+        right: 5%;
+        font-size: 1.5rem;
+    }
+}
+/* =========================================================
+   ASTROLOGY PAGE
+   ========================================================= */
+
+.astrology-page {
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+            radial-gradient(
+                    circle at 50% 45%,
+                    rgba(201, 162, 39, 0.13),
+                    transparent 30%
+            ),
+            radial-gradient(
+                    circle at 20% 20%,
+                    rgba(166, 27, 50, 0.08),
+                    transparent 25%
+            ),
+            #fffaf7;
+
+    color: #332b2b;
+}
+
+.cosmic-glow {
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background:
+            radial-gradient(
+                    circle,
+                    rgba(201, 162, 39, 0.15),
+                    transparent 70%
+            );
+
+    filter: blur(20px);
+
+    animation: cosmicPulse 7s ease-in-out infinite;
+}
+
+@keyframes cosmicPulse {
+
+    0%,
+    100% {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+
+/* Stars */
+
+.cosmic-stars span {
+
+    position: absolute;
+
+    color: #c9a227;
+
+    font-size: 0.9rem;
+
+    opacity: 0.5;
+
+    animation: cosmicTwinkle 4s ease-in-out infinite;
+}
+
+.cosmic-stars span:nth-child(1) {
+    top: 10%;
+    left: 15%;
+}
+
+.cosmic-stars span:nth-child(2) {
+    top: 18%;
+    right: 18%;
+}
+
+.cosmic-stars span:nth-child(3) {
+    top: 40%;
+    left: 7%;
+}
+
+.cosmic-stars span:nth-child(4) {
+    top: 55%;
+    right: 8%;
+}
+
+.cosmic-stars span:nth-child(5) {
+    bottom: 17%;
+    left: 18%;
+}
+
+.cosmic-stars span:nth-child(6) {
+    bottom: 25%;
+    right: 20%;
+}
+
+.cosmic-stars span:nth-child(7) {
+    top: 30%;
+    right: 32%;
+}
+
+.cosmic-stars span:nth-child(8) {
+    bottom: 12%;
+    left: 42%;
+}
+
+@keyframes cosmicTwinkle {
+
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(0.7);
+    }
+
+    50% {
+        opacity: 0.9;
+        transform: scale(1.3);
+    }
+}
+
+
+/* Moon */
+
+.moon {
+
+    position: absolute;
+
+    top: 8%;
+    right: 9%;
+
+    font-family: serif;
+
+    font-size: 4rem;
+
+    color: #c9a227;
+
+    opacity: 0.55;
+
+    transform: rotate(-20deg);
+
+    animation: moonFloat 6s ease-in-out infinite;
+}
+
+@keyframes moonFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-20deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(-12deg);
+    }
+}
+
+
+/* Bow */
+
+.astro-bow {
+
+    position: absolute;
+
+    left: 9%;
+    bottom: 14%;
+
+    font-size: 2.8rem;
+
+    transform: rotate(-15deg);
+
+    animation: floatingOne 5s ease-in-out infinite;
+}
+
+
+/* Main content */
+
+.astrology-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: min(850px, 92%);
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+.astro-chapter {
+    margin-bottom: 10px;
+}
+
+.astro-line {
+
+    width: 55px;
+    height: 1px;
+
+    margin: 0 auto 18px;
+
+    background: #c9a227;
+}
+
+.cosmic-intro {
+
+    font-size: 0.65rem;
+
+    letter-spacing: 4px;
+
+    color: #9b7b21;
+
+    margin-bottom: 15px;
+}
+
+.astrology-content h1 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(3rem, 7vw, 5.5rem);
+
+    line-height: 0.95;
+
+    margin-bottom: 20px;
+}
+
+.astrology-content h1 span {
+
+    color: #a61b32;
+
+    font-style: italic;
+}
+
+.astro-lead {
+
+    max-width: 600px;
+
+    margin: 0 auto 15px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.25rem;
+
+    line-height: 1.5;
+
+    color: #665b5b;
+}
+
+
+/* Zodiac */
+
+.zodiac-orbit {
+
+    position: relative;
+
+    width: 260px;
+    height: 260px;
+
+    margin: 25px auto;
+
+}
+
+.orbit-ring {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgba(201, 162, 39, 0.35);
+}
+
+.outer-ring {
+
+    width: 250px;
+    height: 250px;
+
+    animation: rotateOrbit 30s linear infinite;
+}
+
+.inner-ring {
+
+    width: 170px;
+    height: 170px;
+
+    border-color: rgba(166, 27, 50, 0.18);
+
+    animation: rotateOrbitReverse 20s linear infinite;
+}
+
+@keyframes rotateOrbit {
+
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rotateOrbitReverse {
+
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.orbit-center {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 70px;
+    height: 70px;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255,255,255,0.75);
+
+    border: 1px solid rgba(201, 162, 39, 0.35);
+
+    box-shadow:
+            0 10px 35px rgba(100, 60, 40, 0.08);
+
+    color: #c9a227;
+
+    font-size: 1.5rem;
+}
+
+.zodiac-symbol {
+
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.3rem;
+
+    color: #a61b32;
+
+    background: rgba(255,255,255,0.75);
+
+    border-radius: 50%;
+}
+
+
+/* Zodiac positions */
+
+.symbol-one {
+    top: -4px;
+    left: 115px;
+}
+
+.symbol-two {
+    top: 10px;
+    right: 50px;
+}
+
+.symbol-three {
+    top: 55px;
+    right: 7px;
+}
+
+.symbol-four {
+    top: 115px;
+    right: -3px;
+}
+
+.symbol-five {
+    bottom: 52px;
+    right: 8px;
+}
+
+.symbol-six {
+    bottom: 10px;
+    right: 50px;
+}
+
+.symbol-seven {
+    bottom: -5px;
+    left: 115px;
+}
+
+.symbol-eight {
+    bottom: 10px;
+    left: 50px;
+}
+
+.symbol-nine {
+    bottom: 52px;
+    left: 8px;
+}
+
+.symbol-ten {
+    top: 115px;
+    left: -3px;
+}
+
+.symbol-eleven {
+    top: 55px;
+    left: 7px;
+}
+
+.symbol-twelve {
+    top: 10px;
+    left: 50px;
+}
+
+
+/* Message */
+
+.astro-message {
+
+    max-width: 600px;
+
+    margin: 5px auto 15px;
+
+    padding: 16px 25px;
+
+    border-left: 2px solid #c9a227;
+
+    border-right: 2px solid #c9a227;
+
+    background: rgba(255,255,255,0.35);
+}
+
+.astro-message p {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.25rem;
+
+    font-style: italic;
+
+    line-height: 1.5;
+
+    color: #4f4444;
+}
+
+.astro-counselling {
+
+    max-width: 600px;
+
+    margin: 15px auto;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.05rem;
+
+    line-height: 1.45;
+
+    color: #766969;
+}
+
+.astro-button {
+    margin-top: 12px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .astrology-content {
+        padding: 35px 15px 50px;
+    }
+
+    .astrology-content h1 {
+        font-size: clamp(2.8rem, 13vw, 4.2rem);
+    }
+
+    .astro-lead {
+        font-size: 1.15rem;
+    }
+
+    .zodiac-orbit {
+        width: 220px;
+        height: 220px;
+        margin: 20px auto;
+    }
+
+    .outer-ring {
+        width: 215px;
+        height: 215px;
+    }
+
+    .inner-ring {
+        width: 145px;
+        height: 145px;
+    }
+
+    .orbit-center {
+        width: 60px;
+        height: 60px;
+    }
+
+    .symbol-one {
+        top: -4px;
+        left: 95px;
+    }
+
+    .symbol-two {
+        top: 8px;
+        right: 42px;
+    }
+
+    .symbol-three {
+        top: 48px;
+        right: 3px;
+    }
+
+    .symbol-four {
+        top: 97px;
+        right: -5px;
+    }
+
+    .symbol-five {
+        bottom: 45px;
+        right: 3px;
+    }
+
+    .symbol-six {
+        bottom: 8px;
+        right: 42px;
+    }
+
+    .symbol-seven {
+        bottom: -5px;
+        left: 95px;
+    }
+
+    .symbol-eight {
+        bottom: 8px;
+        left: 42px;
+    }
+
+    .symbol-nine {
+        bottom: 45px;
+        left: 3px;
+    }
+
+    .symbol-ten {
+        top: 97px;
+        left: -5px;
+    }
+
+    .symbol-eleven {
+        top: 48px;
+        left: 3px;
+    }
+
+    .symbol-twelve {
+        top: 8px;
+        left: 42px;
+    }
+
+    .moon {
+        font-size: 2.7rem;
+        top: 5%;
+        right: 5%;
+    }
+
+    .astro-bow {
+        font-size: 2rem;
+        left: 4%;
+        bottom: 8%;
+    }
+
+    .astro-message {
+        padding: 14px 18px;
+    }
+
+    .astro-message p {
+        font-size: 1.12rem;
+    }
+
+    .astro-counselling {
+        font-size: 1rem;
+    }
+}
+/* =========================================================
+   READABILITY ENHANCEMENT
+   Designed for comfortable visual reading
+   ========================================================= */
+
+body {
+    color: #241f20;
+}
+
+/* Main supporting text */
+.intro,
+.story-text,
+.astro-counselling {
+    color: #40383a;
+}
+
+/* Lead text */
+.story-lead,
+.astro-lead {
+    color: #3d3537;
+}
+
+/* Quotes */
+.quote-card p,
+.astro-message p {
+    color: #30292b;
+}
+
+/* Signature */
+.signature {
+    color: #514749;
+}
+
+/* Small labels */
+.independence-text,
+.cosmic-intro,
+.chapter-number,
+.astro-chapter {
+    color: #8b172d;
+}
+
+/* Page indicators */
+.page-indicator {
+    color: #5a5052;
+}
+
+/* Bottom Independence Day message */
+.bottom-message {
+    color: #51494a;
+}
+
+/* Slightly stronger contrast for links/buttons */
+.enter-button,
+.story-button {
+    color: #8f172f;
+    font-weight: 500;
+}
+
+/* Keep the visual hierarchy while improving readability */
+.signature span,
+h1 span,
+.story-content h1 span,
+.astrology-content h1 span {
+    color: #8f172f;
+}
+/* =========================================================
+   PHILOSOPHER PAGE
+   ========================================================= */
+
+.philosophy-page {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+            radial-gradient(
+                    circle at 50% 35%,
+                    rgba(201, 162, 39, 0.13),
+                    transparent 32%
+            ),
+            radial-gradient(
+                    circle at 15% 80%,
+                    rgba(248, 215, 227, 0.38),
+                    transparent 28%
+            ),
+            #fffdf8;
+
+}
+
+.philosophy-glow {
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+
+    background:
+            rgba(201, 162, 39, 0.07);
+
+    filter: blur(75px);
+
+    animation:
+            philosophyGlow 8s ease-in-out infinite;
+
+}
+
+@keyframes philosophyGlow {
+
+    0%,
+    100% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+}
+
+
+/* Decorative bow */
+
+.philosophy-bow {
+
+    position: absolute;
+
+    top: 9%;
+    right: 9%;
+
+    font-size: 2.8rem;
+
+    transform: rotate(12deg);
+
+    animation:
+            floatingTwo 6s ease-in-out infinite;
+
+}
+
+
+/* Cookie */
+
+.philosophy-cookie {
+
+    position: absolute;
+
+    bottom: 12%;
+    left: 8%;
+
+    font-size: 2rem;
+
+    animation:
+            floatingOne 5s ease-in-out infinite;
+
+}
+
+
+/* Main content */
+
+.philosophy-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: min(900px, 92%);
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+}
+
+
+.philosophy-line {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #c9a227;
+
+    margin: 0 auto 18px;
+
+}
+
+
+.philosophy-label {
+
+    font-size: 0.68rem;
+
+    letter-spacing: 4px;
+
+    color: #8b172d;
+
+    margin-bottom: 18px;
+
+}
+
+
+.philosophy-content h1 {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size:
+            clamp(3rem, 7vw, 5.5rem);
+
+    line-height: 0.95;
+
+    margin-bottom: 22px;
+
+}
+
+
+.philosophy-content h1 span {
+
+    color: #8f172f;
+
+    font-style: italic;
+
+}
+
+
+.philosophy-lead {
+
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.25rem;
+
+    line-height: 1.55;
+
+    color: #3d3537;
+
+}
+
+
+/* =========================================================
+   THOUGHT CARDS
+   ========================================================= */
+
+.thoughts {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+
+    max-width: 850px;
+
+    margin: 0 auto 30px;
+
+}
+
+
+.thought-card {
+
+    position: relative;
+
+    padding: 22px 18px;
+
+    text-align: left;
+
+    background:
+            rgba(255,255,255,0.72);
+
+    border:
+            1px solid
+            rgba(201, 162, 39, 0.22);
+
+    box-shadow:
+            0 12px 30px
+            rgba(80, 50, 40, 0.06);
+
+    transition:
+            transform 0.35s ease,
+            box-shadow 0.35s ease;
+
+}
+
+
+.thought-card:hover {
+
+    transform:
+            translateY(-6px);
+
+    box-shadow:
+            0 18px 35px
+            rgba(80, 50, 40, 0.10);
+
+}
+
+
+.thought-number {
+
+    font-size: 0.62rem;
+
+    letter-spacing: 2px;
+
+    color: #8f172f;
+
+    margin-bottom: 10px;
+
+}
+
+
+.thought-symbol {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 10px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 2rem;
+
+    color: #c9a227;
+
+}
+
+
+.thought-card h2 {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: #292324;
+
+    margin-bottom: 10px;
+
+}
+
+
+.thought-card p {
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.02rem;
+
+    line-height: 1.45;
+
+    color: #40383a;
+
+}
+
+
+/* =========================================================
+   PHILOSOPHY QUOTE
+   ========================================================= */
+
+.philosophy-quote {
+
+    position: relative;
+
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    padding: 20px 35px;
+
+    border-top:
+            1px solid
+            rgba(201, 162, 39, 0.28);
+
+    border-bottom:
+            1px solid
+            rgba(201, 162, 39, 0.28);
+
+}
+
+
+.philosophy-quote p {
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.35rem;
+
+    line-height: 1.45;
+
+    font-style: italic;
+
+    color: #30292b;
+
+}
+
+
+.opening-quote,
+.closing-quote {
+
+    font-family: Georgia, serif;
+
+    font-size: 3rem;
+
+    color: rgba(143, 23, 47, 0.25);
+
+}
+
+
+.opening-quote {
+
+    position: absolute;
+
+    left: 5px;
+
+    top: 5px;
+
+}
+
+
+.closing-quote {
+
+    position: absolute;
+
+    right: 5px;
+
+    bottom: -20px;
+
+}
+
+
+.philosophy-button {
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .philosophy-content {
+
+        padding:
+                35px 15px 55px;
+
+    }
+
+    .philosophy-content h1 {
+
+        font-size:
+                clamp(
+                        2.8rem,
+                        12vw,
+                        4.2rem
+                );
+
+    }
+
+    .philosophy-lead {
+
+        font-size: 1.15rem;
+
+    }
+
+    .thoughts {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+    }
+
+    .thought-card {
+
+        padding: 19px;
+
+    }
+
+    .thought-card h2 {
+
+        font-size: 1.15rem;
+
+    }
+
+    .thought-card p {
+
+        font-size: 1.05rem;
+
+    }
+
+    .philosophy-quote {
+
+        padding:
+                20px 28px;
+
+    }
+
+    .philosophy-quote p {
+
+        font-size: 1.2rem;
+
+    }
+
+    .philosophy-bow {
+
+        font-size: 2rem;
+
+        right: 4%;
+
+    }
+
+    .philosophy-cookie {
+
+        font-size: 1.5rem;
+
+        left: 4%;
+
+    }
+
+}
+/* =========================================================
+   PSYCHOLOGY PAGE
+   ========================================================= */
+
+.psychology-page {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+            radial-gradient(
+                    circle at 50% 35%,
+                    rgba(248, 215, 227, 0.45),
+                    transparent 34%
+            ),
+            radial-gradient(
+                    circle at 80% 80%,
+                    rgba(201, 162, 39, 0.10),
+                    transparent 28%
+            ),
+            #fffdf8;
+
+}
+
+
+.mind-glow {
+
+    position: absolute;
+
+    width: 430px;
+
+    height: 430px;
+
+    border-radius: 50%;
+
+    background:
+            rgba(217, 79, 112, 0.07);
+
+    filter: blur(80px);
+
+    animation:
+            mindPulse 8s ease-in-out infinite;
+
+}
+
+
+@keyframes mindPulse {
+
+    0%,
+    100% {
+
+        transform: scale(0.9);
+
+        opacity: 0.65;
+
+    }
+
+    50% {
+
+        transform: scale(1.12);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* =========================================================
+   DECORATIONS
+   ========================================================= */
+
+.mind-bow {
+
+    position: absolute;
+
+    top: 10%;
+
+    left: 8%;
+
+    font-size: 2.8rem;
+
+    transform: rotate(-12deg);
+
+    animation:
+            floatingOne 5s ease-in-out infinite;
+
+}
+
+
+.mind-cookie {
+
+    position: absolute;
+
+    right: 9%;
+
+    bottom: 12%;
+
+    font-size: 2rem;
+
+    animation:
+            floatingTwo 6s ease-in-out infinite;
+
+}
+
+
+/* =========================================================
+   FLOATING WORDS
+   ========================================================= */
+
+.floating-thought {
+
+    position: absolute;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-style: italic;
+
+    font-size: 1rem;
+
+    color: rgba(143, 23, 47, 0.35);
+
+    pointer-events: none;
+
+}
+
+
+.thought-one {
+
+    top: 20%;
+
+    left: 14%;
+
+    transform: rotate(-8deg);
+
+}
+
+
+.thought-two {
+
+    top: 28%;
+
+    right: 13%;
+
+    transform: rotate(7deg);
+
+}
+
+
+.thought-three {
+
+    bottom: 24%;
+
+    left: 12%;
+
+    transform: rotate(-5deg);
+
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.psychology-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: min(850px, 92%);
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+}
+
+
+.psychology-line {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #c9a227;
+
+    margin:
+            0 auto 18px;
+
+}
+
+
+.psychology-label {
+
+    font-size: 0.67rem;
+
+    letter-spacing: 3px;
+
+    color: #8f172f;
+
+    margin-bottom: 18px;
+
+}
+
+
+.psychology-content h1 {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size:
+            clamp(3rem, 7vw, 5.5rem);
+
+    line-height: 0.95;
+
+    margin-bottom: 22px;
+
+}
+
+
+.psychology-content h1 span {
+
+    color: #8f172f;
+
+    font-style: italic;
+
+}
+
+
+.psychology-lead {
+
+    max-width: 620px;
+
+    margin:
+            0 auto 22px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.25rem;
+
+    line-height: 1.55;
+
+    color: #3d3537;
+
+}
+
+
+/* =========================================================
+   MIND ILLUSTRATION
+   ========================================================= */
+
+.mind-container {
+
+    position: relative;
+
+    width: 220px;
+
+    height: 220px;
+
+    margin:
+            15px auto 25px;
+
+}
+
+
+.mind-circle {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    border-radius: 50%;
+
+    transform:
+            translate(-50%, -50%);
+
+}
+
+
+.outer-mind {
+
+    width: 210px;
+
+    height: 210px;
+
+    border:
+            1px solid
+            rgba(201, 162, 39, 0.30);
+
+    animation:
+            rotateOrbit 25s linear infinite;
+
+}
+
+
+.middle-mind {
+
+    width: 155px;
+
+    height: 155px;
+
+    border:
+            1px solid
+            rgba(143, 23, 47, 0.20);
+
+    animation:
+            rotateOrbitReverse 18s linear infinite;
+
+}
+
+
+.inner-mind {
+
+    width: 85px;
+
+    height: 85px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+            rgba(255,255,255,0.82);
+
+    border:
+            1px solid
+            rgba(201, 162, 39, 0.35);
+
+    box-shadow:
+            0 12px 30px
+            rgba(100,60,50,0.08);
+
+}
+
+
+.inner-mind span {
+
+    font-size: 2rem;
+
+    color: #8f172f;
+
+}
+
+
+/* =========================================================
+   MIND NODES
+   ========================================================= */
+
+.mind-node {
+
+    position: absolute;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    background:
+            rgba(255,255,255,0.75);
+
+    border:
+            1px solid
+            rgba(201,162,39,0.20);
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 0.85rem;
+
+    color: #40383a;
+
+}
+
+
+.node-one {
+
+    top: 4px;
+
+    left: 75px;
+
+}
+
+
+.node-two {
+
+    top: 88px;
+
+    right: -35px;
+
+}
+
+
+.node-three {
+
+    bottom: 7px;
+
+    left: 65px;
+
+}
+
+
+.node-four {
+
+    top: 88px;
+
+    left: -30px;
+
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.mind-message {
+
+    max-width: 650px;
+
+    margin:
+            0 auto 22px;
+
+    padding:
+            18px 30px;
+
+    border-top:
+            1px solid
+            rgba(201,162,39,0.25);
+
+    border-bottom:
+            1px solid
+            rgba(201,162,39,0.25);
+
+}
+
+
+.message-icon {
+
+    color: #c9a227;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 7px;
+
+}
+
+
+.mind-message p {
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.2rem;
+
+    line-height: 1.45;
+
+    color: #30292b;
+
+}
+
+
+/* =========================================================
+   QUALITIES
+   ========================================================= */
+
+.human-qualities {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+
+    max-width: 750px;
+
+    margin:
+            0 auto 20px;
+
+}
+
+
+.quality {
+
+    padding:
+            15px 12px;
+
+    background:
+            rgba(255,255,255,0.55);
+
+    border:
+            1px solid
+            rgba(201,162,39,0.18);
+
+}
+
+
+.quality > span {
+
+    font-size: 0.58rem;
+
+    letter-spacing: 2px;
+
+    color: #8f172f;
+
+}
+
+
+.quality h2 {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size: 1.1rem;
+
+    margin:
+            5px 0;
+
+    color: #292324;
+
+}
+
+
+.quality p {
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 0.98rem;
+
+    line-height: 1.35;
+
+    color: #40383a;
+
+}
+
+
+.psychology-ending {
+
+    max-width: 650px;
+
+    margin:
+            0 auto 18px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.1rem;
+
+    line-height: 1.5;
+
+    font-style: italic;
+
+    color: #40383a;
+
+}
+
+
+.psychology-button {
+
+    margin-top: 3px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .psychology-content {
+
+        padding:
+                32px 15px 50px;
+
+    }
+
+
+    .psychology-content h1 {
+
+        font-size:
+                clamp(
+                        2.8rem,
+                        12vw,
+                        4.1rem
+                );
+
+    }
+
+
+    .psychology-lead {
+
+        font-size: 1.14rem;
+
+    }
+
+
+    .mind-container {
+
+        width: 190px;
+
+        height: 190px;
+
+    }
+
+
+    .outer-mind {
+
+        width: 185px;
+
+        height: 185px;
+
+    }
+
+
+    .middle-mind {
+
+        width: 135px;
+
+        height: 135px;
+
+    }
+
+
+    .inner-mind {
+
+        width: 75px;
+
+        height: 75px;
+
+    }
+
+
+    .node-two {
+
+        right: -25px;
+
+    }
+
+
+    .node-four {
+
+        left: -22px;
+
+    }
+
+
+    .human-qualities {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+    }
+
+
+    .quality {
+
+        padding:
+                13px 18px;
+
+    }
+
+
+    .quality h2 {
+
+        font-size: 1.15rem;
+
+    }
+
+
+    .quality p {
+
+        font-size: 1.04rem;
+
+    }
+
+
+    .floating-thought {
+
+        font-size: 0.8rem;
+
+    }
+
+
+    .thought-one {
+
+        left: 5%;
+
+    }
+
+
+    .thought-two {
+
+        right: 5%;
+
+    }
+
+
+    .thought-three {
+
+        left: 5%;
+
+    }
+
+
+    .mind-bow {
+
+        font-size: 2rem;
+
+        left: 3%;
+
+    }
+
+
+    .mind-cookie {
+
+        font-size: 1.5rem;
+
+        right: 3%;
+
+    }
+
+}
+/* =========================================================
+   PHD / UNFINISHED CHAPTER PAGE
+   ========================================================= */
+
+.phd-page {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+            radial-gradient(
+                    circle at 50% 35%,
+                    rgba(201, 162, 39, 0.13),
+                    transparent 33%
+            ),
+            radial-gradient(
+                    circle at 15% 80%,
+                    rgba(248, 215, 227, 0.38),
+                    transparent 30%
+            ),
+            #fffdf8;
+
+}
+
+
+.phd-glow {
+
+    position: absolute;
+
+    width: 470px;
+
+    height: 470px;
+
+    border-radius: 50%;
+
+    background:
+            rgba(201, 162, 39, 0.07);
+
+    filter: blur(80px);
+
+    animation:
+            phdGlow 8s ease-in-out infinite;
+
+}
+
+
+@keyframes phdGlow {
+
+    0%,
+    100% {
+        transform: scale(0.9);
+        opacity: 0.65;
+    }
+
+    50% {
+        transform: scale(1.12);
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   DECORATIONS
+   ========================================================= */
+
+.phd-bow {
+
+    position: absolute;
+
+    top: 10%;
+
+    right: 9%;
+
+    font-size: 2.8rem;
+
+    transform: rotate(12deg);
+
+    animation:
+            floatingTwo 6s ease-in-out infinite;
+
+}
+
+
+.phd-cookie {
+
+    position: absolute;
+
+    bottom: 12%;
+
+    left: 8%;
+
+    font-size: 2rem;
+
+    animation:
+            floatingOne 5s ease-in-out infinite;
+
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.phd-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: min(850px, 92%);
+
+    text-align: center;
+
+    padding: 40px 20px 55px;
+
+}
+
+
+.phd-line {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #c9a227;
+
+    margin:
+            0 auto 18px;
+
+}
+
+
+.phd-label {
+
+    font-size: 0.68rem;
+
+    letter-spacing: 3px;
+
+    color: #8f172f;
+
+    margin-bottom: 18px;
+
+}
+
+
+.phd-content h1 {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size:
+            clamp(3rem, 7vw, 5.4rem);
+
+    line-height: 0.95;
+
+    margin-bottom: 20px;
+
+}
+
+
+.phd-content h1 span {
+
+    color: #8f172f;
+
+    font-style: italic;
+
+}
+
+
+.phd-lead {
+
+    max-width: 600px;
+
+    margin:
+            0 auto 20px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.25rem;
+
+    line-height: 1.5;
+
+    color: #3d3537;
+
+}
+
+
+/* =========================================================
+   OPEN BOOK
+   ========================================================= */
+
+.open-book {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 260px;
+
+    height: 130px;
+
+    margin:
+            12px auto 22px;
+
+    perspective: 800px;
+
+}
+
+
+.book-page {
+
+    position: relative;
+
+    width: 125px;
+
+    height: 115px;
+
+    background:
+            linear-gradient(
+                    135deg,
+                    #fffdf8,
+                    #f8f1df
+            );
+
+    border:
+            1px solid
+            rgba(201,162,39,0.28);
+
+    box-shadow:
+            0 12px 25px
+            rgba(70,50,40,0.08);
+
+}
+
+
+.left-page {
+
+    border-radius:
+            6px 2px 2px 6px;
+
+    transform:
+            rotateY(8deg);
+
+}
+
+
+.right-page {
+
+    border-radius:
+            2px 6px 6px 2px;
+
+    transform:
+            rotateY(-8deg);
+
+}
+
+
+.book-spine {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 4px;
+
+    width: 3px;
+
+    height: 108px;
+
+    transform:
+            translateX(-50%);
+
+    background:
+            rgba(166,27,50,0.20);
+
+}
+
+
+.page-word {
+
+    display: block;
+
+    margin-top: 18px;
+
+    font-size: 0.58rem;
+
+    letter-spacing: 2px;
+
+    color: #8f172f;
+
+}
+
+
+.page-lines {
+
+    margin:
+            14px 20px;
+
+}
+
+
+.page-lines i {
+
+    display: block;
+
+    height: 1px;
+
+    margin-bottom: 9px;
+
+    background:
+            rgba(80,65,55,0.22);
+
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.phd-message {
+
+    max-width: 620px;
+
+    margin:
+            0 auto 20px;
+
+    padding:
+            17px 20px;
+
+    border-top:
+            1px solid
+            rgba(201,162,39,0.28);
+
+    border-bottom:
+            1px solid
+            rgba(201,162,39,0.28);
+
+}
+
+
+.phd-message p {
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.4rem;
+
+    line-height: 1.3;
+
+    font-style: italic;
+
+    color: #30292b;
+
+}
+
+
+.phd-message span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1rem;
+
+    color: #514749;
+
+}
+
+
+.phd-story {
+
+    max-width: 600px;
+
+    margin:
+            0 auto 18px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.08rem;
+
+    line-height: 1.5;
+
+    color: #40383a;
+
+}
+
+
+/* =========================================================
+   REFRAME
+   ========================================================= */
+
+.phd-reframe {
+
+    max-width: 620px;
+
+    margin:
+            0 auto 18px;
+
+    padding:
+            15px 25px;
+
+    background:
+            rgba(248,215,227,0.22);
+
+    border:
+            1px solid
+            rgba(166,27,50,0.13);
+
+}
+
+
+.reframe-symbol {
+
+    color: #c9a227;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 4px;
+
+}
+
+
+.phd-reframe p {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size: 1.2rem;
+
+    line-height: 1.35;
+
+    color: #292324;
+
+}
+
+
+.phd-reflection {
+
+    max-width: 600px;
+
+    margin:
+            0 auto 18px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.08rem;
+
+    line-height: 1.55;
+
+    color: #40383a;
+
+}
+
+
+.phd-button {
+
+    margin-top: 2px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .phd-content {
+
+        padding:
+                30px 15px 50px;
+
+    }
+
+
+    .phd-content h1 {
+
+        font-size:
+                clamp(
+                        2.8rem,
+                        12vw,
+                        4.1rem
+                );
+
+    }
+
+
+    .phd-lead {
+
+        font-size: 1.15rem;
+
+    }
+
+
+    .open-book {
+
+        width: 230px;
+
+        height: 115px;
+
+    }
+
+
+    .book-page {
+
+        width: 110px;
+
+        height: 105px;
+
+    }
+
+
+    .book-spine {
+
+        height: 98px;
+
+    }
+
+
+    .phd-message {
+
+        padding:
+                15px 17px;
+
+    }
+
+
+    .phd-message p {
+
+        font-size: 1.25rem;
+
+    }
+
+
+    .phd-story,
+    .phd-reflection {
+
+        font-size: 1.08rem;
+
+    }
+
+
+    .phd-reframe {
+
+        padding:
+                14px 18px;
+
+    }
+
+
+    .phd-reframe p {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .phd-bow {
+
+        font-size: 2rem;
+
+        right: 3%;
+
+    }
+
+
+    .phd-cookie {
+
+        font-size: 1.5rem;
+
+        left: 3%;
+
+    }
+
+}
+/* =========================================================
+   FINAL SMALL-TEXT READABILITY
+   Keep size elegant — increase weight + contrast
+   ========================================================= */
+
+.chapter-number,
+.independence-text,
+.cosmic-intro,
+.philosophy-label,
+.psychology-label,
+.phd-label,
+.astro-chapter,
+.bottom-message,
+.page-indicator {
+
+    font-weight: 600;
+
+    color: #211d1e;
+
+}
+
+
+/* Supporting paragraphs */
+
+.intro,
+.story-lead,
+.story-text,
+.astro-lead,
+.astro-counselling,
+.philosophy-lead,
+.thought-card p,
+.psychology-lead,
+.quality p,
+.psychology-ending,
+.phd-lead,
+.phd-story,
+.phd-reflection {
+
+    color: #292526;
+
+    font-weight: 500;
+
+}
+
+
+/* Smaller descriptive text */
+
+.quote-card p,
+.astro-message p,
+.philosophy-quote p,
+.mind-message p,
+.phd-message p,
+.phd-message span {
+
+    color: #242021;
+
+    font-weight: 500;
+
+}
+
+
+/* Small card headings */
+
+.thought-card h2,
+.quality h2 {
+
+    color: #211d1e;
+
+    font-weight: 600;
+
+}
+
+
+/* Small decorative labels */
+
+.page-word,
+.thought-number,
+.quality > span {
+
+    color: #651225;
+
+    font-weight: 600;
+
+}
+/* =========================================================
+   INDEPENDENCE DAY PAGE
+   ========================================================= */
+
+.freedom-page {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+            radial-gradient(
+                    circle at 50% 35%,
+                    rgba(255,153,51,0.08),
+                    transparent 28%
+            ),
+            radial-gradient(
+                    circle at 50% 70%,
+                    rgba(19,136,8,0.07),
+                    transparent 30%
+            ),
+            #fffdf8;
+
+}
+
+
+.freedom-glow {
+
+    position: absolute;
+
+    width: 480px;
+
+    height: 480px;
+
+    border-radius: 50%;
+
+    background:
+            rgba(201,162,39,0.06);
+
+    filter: blur(80px);
+
+    animation:
+            freedomPulse 8s ease-in-out infinite;
+
+}
+
+
+@keyframes freedomPulse {
+
+    0%,
+    100% {
+        transform: scale(0.9);
+        opacity: 0.65;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   TRICOLOUR ATMOSPHERE
+   ========================================================= */
+
+.tricolor-glow {
+
+    position: absolute;
+
+    width: 260px;
+
+    height: 260px;
+
+    border-radius: 50%;
+
+    filter: blur(90px);
+
+    opacity: 0.13;
+
+}
+
+
+.saffron-glow {
+
+    top: -100px;
+
+    left: 50%;
+
+    transform:
+            translateX(-50%);
+
+    background: #ff9933;
+
+}
+
+
+.green-glow {
+
+    bottom: -100px;
+
+    left: 50%;
+
+    transform:
+            translateX(-50%);
+
+    background: #138808;
+
+}
+
+
+/* =========================================================
+   DECORATIONS
+   ========================================================= */
+
+.freedom-bow {
+
+    position: absolute;
+
+    top: 10%;
+
+    right: 9%;
+
+    font-size: 2.8rem;
+
+    transform: rotate(12deg);
+
+    animation:
+            floatingTwo 6s ease-in-out infinite;
+
+}
+
+
+.freedom-cookie {
+
+    position: absolute;
+
+    bottom: 12%;
+
+    left: 8%;
+
+    font-size: 2rem;
+
+    animation:
+            floatingOne 5s ease-in-out infinite;
+
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.freedom-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: min(850px, 92%);
+
+    text-align: center;
+
+    padding: 40px 20px 55px;
+
+}
+
+
+.freedom-line {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #c9a227;
+
+    margin:
+            0 auto 18px;
+
+}
+
+
+.freedom-label {
+
+    font-size: 0.7rem;
+
+    letter-spacing: 5px;
+
+    color: #8f172f;
+
+    margin-bottom: 18px;
+
+}
+
+
+.freedom-content h1 {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size:
+            clamp(3rem, 7vw, 5.5rem);
+
+    line-height: 0.95;
+
+    margin-bottom: 22px;
+
+}
+
+
+.freedom-content h1 span {
+
+    color: #8f172f;
+
+    font-style: italic;
+
+}
+
+
+.freedom-lead {
+
+    max-width: 600px;
+
+    margin:
+            0 auto 20px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.25rem;
+
+    line-height: 1.5;
+
+    color: #292526;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   FREEDOM SUN
+   ========================================================= */
+
+.freedom-sun {
+
+    position: relative;
+
+    width: 170px;
+
+    height: 170px;
+
+    margin:
+            15px auto 22px;
+
+}
+
+
+.sun-ring {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    border-radius: 50%;
+
+    transform:
+            translate(-50%, -50%);
+
+}
+
+
+.sun-saffron {
+
+    width: 165px;
+
+    height: 165px;
+
+    border:
+            2px solid
+            rgba(255,153,51,0.38);
+
+    animation:
+            rotateOrbit 22s linear infinite;
+
+}
+
+
+.sun-white {
+
+    width: 120px;
+
+    height: 120px;
+
+    border:
+            1px solid
+            rgba(80,80,80,0.18);
+
+}
+
+
+.sun-green {
+
+    width: 80px;
+
+    height: 80px;
+
+    border:
+            2px solid
+            rgba(19,136,8,0.35);
+
+    animation:
+            rotateOrbitReverse 16s linear infinite;
+
+}
+
+
+.sun-center {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 50px;
+
+    height: 50px;
+
+    transform:
+            translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+            rgba(255,255,255,0.85);
+
+    color: #1c4e9b;
+
+    border:
+            1px solid
+            rgba(28,78,155,0.25);
+
+    box-shadow:
+            0 8px 25px
+            rgba(50,50,50,0.07);
+
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.freedom-message {
+
+    max-width: 650px;
+
+    margin:
+            0 auto 20px;
+
+    padding:
+            17px 20px;
+
+    border-top:
+            1px solid
+            rgba(201,162,39,0.28);
+
+    border-bottom:
+            1px solid
+            rgba(201,162,39,0.28);
+
+}
+
+
+.freedom-message p {
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.3rem;
+
+    line-height: 1.4;
+
+    color: #242021;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   FREEDOM VALUES
+   ========================================================= */
+
+.freedom-values {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+
+    max-width: 750px;
+
+    margin:
+            0 auto 20px;
+
+}
+
+
+.freedom-value {
+
+    padding:
+            15px 12px;
+
+    background:
+            rgba(255,255,255,0.58);
+
+    border:
+            1px solid
+            rgba(201,162,39,0.18);
+
+}
+
+
+.value-icon {
+
+    font-size: 1.1rem;
+
+    color: #c9a227;
+
+}
+
+
+.freedom-value h2 {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size: 1.1rem;
+
+    color: #211d1e;
+
+    margin:
+            5px 0;
+
+}
+
+
+.freedom-value p {
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1rem;
+
+    line-height: 1.35;
+
+    color: #292526;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   REFLECTION
+   ========================================================= */
+
+.freedom-reflection {
+
+    max-width: 620px;
+
+    margin:
+            0 auto 18px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.1rem;
+
+    line-height: 1.5;
+
+    color: #292526;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   FINAL TRANSITION
+   ========================================================= */
+
+.final-transition {
+
+    margin:
+            10px auto 12px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    color: #5a5052;
+
+    font-size: 0.95rem;
+
+}
+
+
+.final-transition div {
+
+    margin-top: 4px;
+
+    color: #c9a227;
+
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.freedom-button {
+
+    margin-top: 2px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .freedom-content {
+
+        padding:
+                30px 15px 50px;
+
+    }
+
+
+    .freedom-content h1 {
+
+        font-size:
+                clamp(
+                        2.8rem,
+                        12vw,
+                        4.2rem
+                );
+
+    }
+
+
+    .freedom-lead {
+
+        font-size: 1.15rem;
+
+    }
+
+
+    .freedom-sun {
+
+        width: 145px;
+
+        height: 145px;
+
+    }
+
+
+    .sun-saffron {
+
+        width: 140px;
+
+        height: 140px;
+
+    }
+
+
+    .sun-white {
+
+        width: 100px;
+
+        height: 100px;
+
+    }
+
+
+    .sun-green {
+
+        width: 68px;
+
+        height: 68px;
+
+    }
+
+
+    .freedom-values {
+
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+
+    }
+
+
+    .freedom-value {
+
+        padding:
+                13px 18px;
+
+    }
+
+
+    .freedom-value p {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .freedom-reflection {
+
+        font-size: 1.08rem;
+
+    }
+
+
+    .freedom-bow {
+
+        font-size: 2rem;
+
+        right: 3%;
+
+    }
+
+
+    .freedom-cookie {
+
+        font-size: 1.5rem;
+
+        left: 3%;
+
+    }
+
+}
+/* =========================================================
+   FINAL LETTER PAGE
+   ========================================================= */
+
+.final-page {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+            radial-gradient(
+                    circle at 50% 20%,
+                    rgba(248,215,227,0.42),
+                    transparent 32%
+            ),
+            radial-gradient(
+                    circle at 50% 80%,
+                    rgba(201,162,39,0.10),
+                    transparent 30%
+            ),
+            #fffdf8;
+
+}
+
+
+.final-glow {
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    background:
+            rgba(217,79,112,0.05);
+
+    filter: blur(85px);
+
+    animation:
+            finalGlow 8s ease-in-out infinite;
+
+}
+
+
+@keyframes finalGlow {
+
+    0%,
+    100% {
+        transform: scale(0.9);
+        opacity: 0.65;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   DECORATIONS
+   ========================================================= */
+
+.final-bow {
+
+    position: absolute;
+
+    top: 7%;
+
+    right: 8%;
+
+    font-size: 3rem;
+
+    transform: rotate(12deg);
+
+    animation:
+            floatingTwo 6s ease-in-out infinite;
+
+}
+
+
+.final-cookie {
+
+    position: absolute;
+
+    bottom: 10%;
+
+    left: 8%;
+
+    font-size: 2rem;
+
+    animation:
+            floatingOne 5s ease-in-out infinite;
+
+}
+
+
+.final-star {
+
+    position: absolute;
+
+    color: #c9a227;
+
+    opacity: 0.45;
+
+    animation:
+            twinkle 4s ease-in-out infinite;
+
+}
+
+
+.star-one {
+
+    top: 15%;
+
+    left: 18%;
+
+}
+
+
+.star-two {
+
+    top: 32%;
+
+    right: 10%;
+
+}
+
+
+.star-three {
+
+    bottom: 17%;
+
+    right: 20%;
+
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.final-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: min(780px, 92%);
+
+    text-align: center;
+
+    padding: 50px 15px 60px;
+
+}
+
+
+.final-line {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #c9a227;
+
+    margin:
+            0 auto 18px;
+
+}
+
+
+.final-label {
+
+    font-size: 0.68rem;
+
+    letter-spacing: 3px;
+
+    color: #211d1e;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+
+.final-content h1 {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size:
+            clamp(3.2rem, 8vw, 6rem);
+
+    line-height: 0.9;
+
+    margin-bottom: 28px;
+
+}
+
+
+.final-content h1 span {
+
+    color: #8f172f;
+
+    font-style: italic;
+
+}
+
+
+/* =========================================================
+   LETTER
+   ========================================================= */
+
+.letter-card {
+
+    position: relative;
+
+    max-width: 690px;
+
+    margin:
+            0 auto 30px;
+
+    padding:
+            38px 45px;
+
+    text-align: left;
+
+    background:
+            rgba(255,255,255,0.78);
+
+    border:
+            1px solid
+            rgba(201,162,39,0.30);
+
+    box-shadow:
+            0 20px 55px
+            rgba(80,50,40,0.08);
+
+}
+
+
+.letter-top {
+
+    text-align: center;
+
+    color: #c9a227;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 20px;
+
+}
+
+
+.letter-greeting {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size: 1.35rem;
+
+    color: #8f172f;
+
+    font-weight: 600;
+
+}
+
+
+.letter-card p {
+
+    margin-bottom: 17px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1.12rem;
+
+    line-height: 1.6;
+
+    color: #292526;
+
+    font-weight: 500;
+
+}
+
+
+.letter-highlight {
+
+    margin:
+            25px 0;
+
+    padding:
+            20px 22px;
+
+    text-align: center;
+
+    background:
+            rgba(248,215,227,0.25);
+
+    border-left:
+            3px solid #8f172f;
+
+    border-right:
+            3px solid #c9a227;
+
+}
+
+
+.letter-highlight span {
+
+    display: block;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1rem;
+
+    color: #40383a;
+
+    font-weight: 500;
+
+    margin-bottom: 6px;
+
+}
+
+
+.letter-highlight strong {
+
+    display: block;
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size: 1.3rem;
+
+    line-height: 1.3;
+
+    color: #211d1e;
+
+}
+
+
+.letter-final-thought {
+
+    font-style: italic;
+
+    font-size: 1.2rem !important;
+
+    color: #8f172f !important;
+
+}
+
+
+.letter-signature {
+
+    text-align: right;
+
+    margin-top: 25px;
+
+    margin-bottom: 0 !important;
+
+}
+
+
+.letter-signature span {
+
+    color: #8f172f;
+
+    font-style: italic;
+
+    font-size: 1.25rem;
+
+}
+
+
+/* =========================================================
+   BIRTHDAY REVEAL
+   ========================================================= */
+
+.birthday-reveal {
+
+    margin:
+            0 auto 25px;
+
+    text-align: center;
+
+}
+
+
+.reveal-symbol {
+
+    color: #c9a227;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 5px;
+
+    animation:
+            symbolFloat 3s ease-in-out infinite;
+
+}
+
+
+.birthday-reveal p {
+
+    font-family:
+            "Playfair Display",
+            serif;
+
+    font-size: 1.8rem;
+
+    color: #8f172f;
+
+    font-weight: 600;
+
+}
+
+
+.birthday-reveal span {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 1rem;
+
+    color: #211d1e;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   MUSIC BUTTON
+   ========================================================= */
+
+.music-button {
+
+    display: block;
+
+    margin:
+            0 auto 13px;
+
+    padding:
+            12px 20px;
+
+    border:
+            1px solid
+            rgba(143,23,47,0.30);
+
+    border-radius: 30px;
+
+    background:
+            rgba(255,255,255,0.72);
+
+    color: #8f172f;
+
+    font-family:
+            "Poppins",
+            sans-serif;
+
+    font-size: 0.68rem;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition:
+            all 0.3s ease;
+
+}
+
+
+.music-button:hover {
+
+    background: #8f172f;
+
+    color: white;
+
+    transform:
+            translateY(-3px);
+
+}
+
+
+/* =========================================================
+   RESTART
+   ========================================================= */
+
+.restart-button {
+
+    display: inline-block;
+
+    color: #211d1e;
+
+    font-size: 0.63rem;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-decoration: none;
+
+    opacity: 0.8;
+
+    transition:
+            opacity 0.3s ease;
+
+}
+
+
+.restart-button:hover {
+
+    opacity: 1;
+
+}
+
+
+/* =========================================================
+   FINAL MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .final-content {
+
+        width: 94%;
+
+        padding:
+                35px 8px 50px;
+
+    }
+
+
+    .final-content h1 {
+
+        font-size:
+                clamp(
+                        3rem,
+                        14vw,
+                        4.5rem
+                );
+
+    }
+
+
+    .letter-card {
+
+        padding:
+                28px 22px;
+
+    }
+
+
+    .letter-card p {
+
+        font-size: 1.12rem;
+
+        line-height: 1.58;
+
+    }
+
+
+    .letter-greeting {
+
+        font-size: 1.3rem;
+
+    }
+
+
+    .letter-highlight {
+
+        padding:
+                18px 15px;
+
+    }
+
+
+    .letter-highlight strong {
+
+        font-size: 1.2rem;
+
+    }
+
+
+    .letter-final-thought {
+
+        font-size: 1.18rem !important;
+
+    }
+
+
+    .final-bow {
+
+        font-size: 2rem;
+
+        right: 3%;
+
+    }
+
+
+    .final-cookie {
+
+        font-size: 1.5rem;
+
+        left: 3%;
+
+    }
+
+}
+/* =========================================================
+   SHARE BUTTON
+   ========================================================= */
+
+.share-button {
+
+    display: block;
+
+    margin: 0 auto 14px;
+
+    padding: 12px 22px;
+
+    border: 1px solid rgba(143, 23, 47, 0.30);
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    color: #8f172f;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.68rem;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+.share-button:hover {
+
+    background: #8f172f;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+            0 10px 25px rgba(143, 23, 47, 0.15);
+
+}
+
+@media (max-width: 700px) {
+
+    .share-button {
+
+        width: min(90%, 280px);
+
+        padding: 14px 18px;
+
+        font-size: 0.7rem;
+
+    }
+
+}
