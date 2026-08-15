@@ -1,13 +1,7 @@
 # 🎀 A Birthday Surprise for Maa
 > A personalized, interactive birthday website created especially for my mother.
 
-## 🌐 Live Website
-
 ### [🎁 Open the Birthday Surprise](https://wonderful-druid-b97148.netlify.app)
-
-**Live Demo:**  
-https://wonderful-druid-b97148.netlify.app
-
 ---
 
 ## 💝 About the Project
